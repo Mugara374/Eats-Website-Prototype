@@ -9,27 +9,27 @@ document.addEventListener("DOMContentLoaded", function() {
   
     homeLink.addEventListener("click", function(event) {
       event.preventDefault();
-      window.location.href = "home.html";
+      window.location.href = "#home";
     });
   
     aboutLink.addEventListener("click", function(event) {
       event.preventDefault();
-      window.location.href = "about.html";
+      window.location.href = "#about";
     });
   
     restaurantsLink.addEventListener("click", function(event) {
       event.preventDefault();
-      window.location.href = "restaurants.html";
+      window.location.href = "#restaurants";
     });
   
     signUpLink.addEventListener("click", function(event) {
       event.preventDefault();
-      window.location.href = "signup.html";
+      window.location.href = "#signup";
     });
   
     contactLink.addEventListener("click", function(event) {
       event.preventDefault();
-      window.location.href = "contact.html";
+      window.location.href = "#contact";
     });
   });
   
