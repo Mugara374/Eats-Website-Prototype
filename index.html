@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LocalEats - Connecting You to Your Neighborhood's Best Eateries</title>
+  <title>LOCALEATS - Connecting You to Your Neighborhood's Best Eateries</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
         <li><a href="#about" id="about-link">About Us</a></li>
         <li><a href="#restaurants" id="restaurants-link">Restaurants</a></li>
         <li><a href="#contact" id="contact-link">Contact Us</a></li>
+        <li><a href="signup" id="signup/signin-link">Signup/signIn</a></li>
       </ul>
     </nav>
   </header>
@@ -34,8 +35,70 @@
 
   <section id="restaurants" class="restaurants">
     <h2>Featured Restaurants</h2>
+    <div class="restaurant">
+        <img src="pasta_hut_logo.png" alt="Pasta Hut Logo">
+        <div class="details">
+          <h3>Pasta Hut</h3>
+          <p><strong>Location:</strong> 123 Main Street, Cityville</p>
+          <p><strong>Menu:</strong> <a href="pasta_hut_menu.pdf" target="_blank">View Menu</a></p>
+          <p><strong>Rating:</strong> 4.5/5</p>
+          <p><strong>Review:</strong> "Delicious pasta dishes with friendly service. Highly recommended!"</p>
+        </div>
+      </div>
     <!-- Restaurant profiles, menus, and customer reviews go here -->
   </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account </title>
+</head>
+<body>
+  <h1>Account </h1>
+
+  <!-- Sign Up Form -->
+  <form id="signup-form" action="signup.php" method="POST">
+    <h2>Sign Up</h2>
+    <label for="signup-email">Email:</label>
+    <input type="email" id="signup-email" name="signup-email" required>
+    <label for="signup-password">Password:</label>
+    <input type="password" id="signup-password" name="signup-password" required>
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <!-- Sign In Form -->
+  <form id="signin-form" action="signin.php" method="POST">
+    <h2>Sign In</h2>
+    <label for="signin-email">Email:</label>
+    <input type="email" id="signin-email" name="signin-email" required>
+    <label for="signin-password">Password:</label>
+    <input type="password" id="signin-password" name="signin-password" required>
+    <button type="submit">Sign In</button>
+  </form>
+
+  <p>Already have an account? <a href="#" id="toggle-signin">Sign In</a></p>
+
+  <script>
+    // JavaScript to toggle between sign up and sign in forms
+    const signupForm = document.getElementById('signup-form');
+    const signinForm = document.getElementById('signin-form');
+    const toggleSigninLink = document.getElementById('toggle-signin');
+
+    function toggleForms() {
+      signupForm.style.display = signupForm.style.display === 'none' ? 'block' : 'none';
+      signinForm.style.display = signinForm.style.display === 'none' ? 'block' : 'none';
+    }
+
+    toggleSigninLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      toggleForms();
+    });
+  </script>
+</body>
+</html>
+
 
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
@@ -69,6 +132,7 @@
       const aboutLink = document.getElementById("about-link");
       const restaurantsLink = document.getElementById("restaurants-link");
       const contactLink = document.getElementById("contact-link");
+      const signup/signin = document.getElementById("signup/signin-link");
 
       homeLink.addEventListener("click", function(event) {
         event.preventDefault();
@@ -89,7 +153,12 @@
         event.preventDefault();
         document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
       });
-    });
+
+      signup/signinLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("signup/signin").scrollIntoView({ behaviour: "smooth" });
+      });
+
   </script>
 </body>
 </html>
