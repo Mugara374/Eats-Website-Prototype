@@ -1,0 +1,286 @@
+/* styles.css */
+
+/* General Styles */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+
+
+
+body{
+background: lightblue;
+color: #333;
+margin-top: 20px;
+min-height: fit-content;
+}
+
+/*v ----------------------- */
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/images/Restaurant-Kronborg-Billeder-58.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   flex-wrap: wrap;
+   
+}
+
+
+nav ul li{
+display: inline-block;
+margin-inline: 20px;
+margin-top: 20px;
+text-align: center;
+
+}
+nav ul li a{
+font-size: 18px;
+color: #cbd7e7;
+line-height: 20px;
+font-weight: 600;
+text-decoration: none;
+transform:  4s;
+}
+nav ul li a:hover{
+
+color: darkblue;
+}
+
+nav img{
+  margin-top: 20px;
+  height: 100px;
+  margin-left: 20px;
+  width: 100px;
+}
+
+
+.content-top{
+  justify-content: center;
+  text-align: center;
+  margin-top: 140px;
+  color: rgba(0, 4, 8, 0.719);
+
+}
+
+.content-top h1{
+  font-size: 40px;
+}
+
+.content-top p {
+font-size: 28px;
+color: black;
+
+}
+
+.content-top a{
+ margin-top: 30px;
+
+}
+
+
+  nav #button {
+  padding: 20px;
+  background-color: #1762c5;
+  color: white;
+  font-size: larger;
+  font-family: 'roboto', sans-serif;
+  border: 2px solid black;
+  border-radius: 15px;
+  
+}
+
+.local{
+  margin-left: 20px;
+  padding-top: 20px;
+  margin-top: 100px;
+  color:white;
+  position: absolute;
+  font-size: 20px;
+  font-family: 'Irish+Grover'sans-serif;
+}
+
+
+
+/* ---------end div-------------------------------------------------------------- */
+
+section{
+  width: 4vh
+  height:96vh;
+  background:black;
+  margin-top:0 20px;
+  min-height:fit-content;
+}
+
+
+/* ---------------------------------------section 1 */
+
+#about {
+  
+ background-color:rgb(98, 113, 143) ;
+ position: relative;
+ height:80vh;
+ min-height: fit-content;
+
+
+}
+#about h2{
+  font-size: 40px;
+  margin-top: 60px;
+
+  
+}
+#about p{
+font-size: 24px;
+
+
+
+}
+#img {
+  padding: 5px;
+  margin: 5px;
+  height: 300px;
+  float: right;
+  width: 350px
+  
+}
+
+/* end section 1----------------------- */
+
+
+
+  
+  
+  
+
+  
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #eee;
+  }
+  
+  
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta:hover {
+    background-color: #cc5500;
+  }
+  
+  .about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+
+
+
+  
+
+  
+ /*  #home {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./assets/images/Restaurant-Kronborg-Billeder-58.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+  } */
+
+  
+  /* section 2 ---------------------------------*/
+
+#restaurants {
+  background-color: blanchedalmond;
+  width: ;
+  height: 80vh;
+}
+
+#images {
+
+  float: left;
+
+  }
+  .details{
+    font-size: 30px;
+    margin-top: 30px;
+
+  }
+ /* ---------------------------------------------------section 2 end */
+
+
+#signup-form {
+  background-color:;
+  height: 20vh;
+}
+
+#images {
+  height: 250px;
+  width: 200px;
+  float: left;
+  padding: 30px;
+  margin: 5px;
+}
+
+.form{
+  text-align: center;
+  display: flex;
+  justify-content: baseline;
+  margin: 20px 20px;
+
+}
+.signup .Account{
+ 
+
+
+}
+
+/* section 3 end */
+
+
+
+
+
+/* section 4 */
+
+#contact{
+  background: #1762c5;
+  height: 20vh;
+}
+
+
