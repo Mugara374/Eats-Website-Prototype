@@ -139,14 +139,15 @@ button:hover {
 }
 
 /* CONTACT US*/
-#cont {
+/* #cont {
   padding: 40px 15%;
-}
+} */
 .contact {
+  padding: 40px 15%;
   background: #101010;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   align-items: center;
@@ -364,4 +365,40 @@ input[type="submit"]:hover{
 }
 .signup_link a:hover{
   text-decoration: underline;
+}
+
+/* SIGN UP */
+.signup {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup-form{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.signup-input{
+  display: block;
+  width: 350px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+.signup-button {
+  width: 350px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgba(112, 167, 112, 0.849);
+  border: none;
+  color: white;
+}
+
+.signup-form h1{
+  margin-bottom: 30px;
 }
