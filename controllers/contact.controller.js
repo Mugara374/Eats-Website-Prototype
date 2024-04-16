@@ -1,22 +1,26 @@
 import ContactModel from "../models/contact.models.js";
 
 const ContactController ={
-    createNewContact : async(req,res)=>{
+    createNewContact: async (req, res) => {
         try {
-         const newContact = await ContactModel.create(req.body)
-         res.status(201).json({
-            message:"Contact created successfully!!!",
-            student:newContact
-         })
+            // Check if password and confirm password match
+            if (req.body.password !== req.body.confirmPassword) {
+                return res.status(400).json({
+                    message: "Password and confirm password do not match"
+                });
+            }
 
+            // If password and confirm password match, proceed with creating the contact
+            const newContact = await ContactModel.create(req.body);
+            res.redirect('/login')
         } catch (error) {
-            console.log(error.message)
-            res.status(500).json({
-                message:"Internal Server Error"
-            })
-            
+            console.log(error.message);
+            return res.status(500).json({
+                message: "Internal Server Error"
+            });
         }
     },
+    
     getAllContacts : async (req,res)=>{
         try {
             const getContacts = await ContactModel.find()

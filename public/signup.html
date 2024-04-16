@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body class="signup">
+    <form class="signup-form" id="signupForm" method="post" action="/contacts/add">
+        <h1>SignUp</h1>
+        <input class="signup-input" type="text" name="FullName" placeholder="Full Name" required>
+        <input class="signup-input" type="text" name="RestaurantName" placeholder="Restaurant name" required>
+        <input class="signup-input" type="text" name="RestaurantLocation" placeholder="Restaurant location" required>
+        <input class="signup-input" type="text" name="PhoneNumber" placeholder="Phone number">
+        <input class="signup-input" type="text" name="email" placeholder="Email">
+        <input class="signup-input" type="password" name="password" id="password" placeholder="Password" required>
+        <input class="signup-input" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+        <div id="passwordError" style="color: red; display: none;">Passwords do not match</div>
+        <button class="signup-button" type="submit">SignUp</button>
+        <button type="button" class="about-button"><a href="/">Back to Homepage</a></button>
+    </form>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                document.getElementById("passwordError").style.display = "block";
+                event.preventDefault(); // Prevent form submission
+            } else {
+                document.getElementById("passwordError").style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
