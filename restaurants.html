@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Featured Restaurants</title>
 </head>
-<body>
-    <section id="restaurants" class="restaurants">
-    <h2>Featured Restaurants</h2>
-    <div class="restaurant">
-        <img id="images" src="./assets/images/pasta.jpg" alt="Pasta Hut Logo">
-        <div class=" details">
-          <h3>Pasta Hut</h3>
-          <p><strong>Location:</strong> 123 Main Street, Remera</p>
-          <p><strong>Menu:</strong> <a href="pasta_hut_menu.pdf" target="_blank">View Menu</a></p>
-          <p><strong>Rating:</strong> 4.5/5</p>
-          <p><strong>Review:</strong> "Delicious pasta dishes with friendly service. Highly recommended!"</p>
+<body class="resto">
+   <div class="top-resto">
+                <nav>
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <ul>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./restaurants.html">Featured Restaurants</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <button type="button"><a href="login.html">Login/Sign up</a></button>
+                </nav>
+            </div>
         </div>
-      </div>
-   </section>
-  <!-- Restaurant profiles, menus, and customer reviews go here -->
+        <section class="restaurants">
+          <div>
+            <h1>Featured Restaurants with their Ratings</h1>
+            <div class="restaurant-1">
+              <h2>PastaHut</h2>
+              <p>
+                Cuising type: West African
+                <address>
+                  Location: Remera, Giporoso, KK 334 St <br>
+                  Phone number: +25073456690 <br>
+                  Email address: pastahut@gmail.com <br>
+                </address>
+                <div class="resto-container">
+                  <span class="fa fa-star fa-3x checked"></span>
+                  <span class="fa fa-star fa-3x checked"></span>
+                  <span class="fa fa-star fa-3x checked"></span>
+                  <span class="fa fa-star fa-3x"></span>
+                  <span class="fa fa-star fa-3x"></span>
+              </div>
+              </p>
+            </div>
+            <div class="restaurant-2">
+              <h2>Pinky CupCakes</h2>
+              <p>
+                Cuisine type: Pastry
+                <address>
+                  Location: Remera, Giporoso, KK 334 St <br>
+                  Phone number: +25073456690 <br>
+                  Email address: pastahut@gmail.com
+                </address>
+                <div class="resto-container-1">
+                  <span class="fa fa-star fa-3x checked-1"></span>
+                  <span class="fa fa-star fa-3x checked-1"></span>
+                  <span class="fa fa-star fa-3x checked-1"></span>
+                  <span class="fa fa-star fa-3x"></span>
+                  <span class="fa fa-star fa-3x"></span>
+              </div>
+              </p>
+            </div>
+          </div>
+        </section>
 </body>
 </html>

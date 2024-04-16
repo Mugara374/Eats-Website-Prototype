@@ -401,3 +401,54 @@ input[type="submit"]:hover{
 .signup-form h1{
   margin-bottom: 30px;
 }
+
+/* FEATURED RESTAURANTS */
+.resto{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+}
+
+.top-resto {
+  background: linear-gradient(120deg,#297fb9c0, #8d44adc5);
+}
+
+.resto-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.checked{
+  color: orange;
+}
+.restaurants{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurants-1{
+  margin-bottom: 20px;
+}
+
+.restaurants h1{
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.restaurants-1 h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.restaurants-1 p{
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.checked-1{
+  color: orange;
+}
